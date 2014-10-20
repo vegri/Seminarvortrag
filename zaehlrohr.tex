@@ -1,0 +1,78 @@
+\subsection{Vieldraht Proportionalkammer}
+
+\begin{frame}{Zählrohr}
+    \begin{columns}[T]
+    
+	    \column{.6\textwidth}
+			\begin{figure}[htbp]
+			  \centering
+			  \includesvg[width=\textwidth]{zaehlrohr}
+			  \caption{Aufbau eines Zählrors [wzr]}
+			\end{figure}
+			
+	    \column{.45\textwidth}
+	    	\begin{itemize}
+	    	  \item Gasgefülltes Rohr
+			  \item Hochspannung zwischen Kathode und Anode
+			  \item Ionisierende Strahlung bildet freie Elektronen
+			  \item Diese driften zur Anode	
+			  \item Stromimpuls wird gemessen
+			\end{itemize}
+    \end{columns}
+\end{frame}
+
+%___________________________________________________________________________________________________
+
+\begin{frame}{Zählrohr-Kennlinie}
+	Zählrohrspannung beschleunigt freie Elektronen Richtung Anode \\
+	Funktionsweise stark abhängig von Spannung
+	
+	\begin{figure}[htbp]
+	  \centering
+	  \includesvg[height=0.5\textheight]{zaehlrohr-kennlinie}
+	  \caption{Kennlinie eines Zählrors [wzk]}
+	\end{figure}
+	
+\end{frame}	
+
+%___________________________________________________________________________________________________
+
+\begin{frame}{Zählrohr-Modi}
+	\begin{block}{Geringe Spannung ($\ll 100V$): Rekombination}
+		\begin{itemize}
+		  	\item $e^-$ können mit Ionen rekombinieren
+		  	\item Nur wenige Elektronen erreichen Anode
+		  	\item Strompuls abhängig von Abstand der Ionisation
+		\end{itemize}
+	\end{block}
+	
+	\begin{block}{Höhere Spannung ($O(100V)$): Ionisationskammer}
+		\begin{itemize}
+		  	\item Keine Rekombination: Alle $e^-$ erreichen Anode
+		  	\item Strompuls proportional zur Anzahl der Elektronen
+			\item \textbf{Messung der absorbierten Energie möglich}
+		\end{itemize}
+	\end{block}
+	
+\end{frame}
+
+\begin{frame}{Zählrohr-Modi}
+	\begin{block}{Höhere Spannung: Proportionalzählrohr}
+		\begin{itemize}
+		  	\item $e^-$ ionisieren nahe der Anode weitere Atome (Lawinen)
+			\item $\Rightarrow$ Verstärkung des Strompulses
+		  	\item Signal weiterhin proportional zur absorbierten Energie
+		\end{itemize}
+	\end{block}
+	
+	\begin{block}{Höchste Spannung: Geiger-Müller-Bereich}
+		\begin{itemize}
+	  		\item Energie so hoch, dass UV-Strahlung entsteht, die weitere Stellen
+	  		Ionisiert
+	  		\item Komplette Ionisierung der Kammer $\Rightarrow$ Gasentladung
+	  		\item Keine Energiemessung $\Leftrightarrow$ Reiner Zähler
+	  		\item Hohe Totzeit (ca. $100\mu s$)
+		\end{itemize}
+	\end{block}
+	Noch höhere Spannung führt zur spontanen Gasentladung
+\end{frame}

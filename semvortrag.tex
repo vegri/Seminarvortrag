@@ -23,6 +23,11 @@
 	\end{frame}
 }% AtBeginSection
 
+\AtBeginSubsection[]{%
+\begin{frame}
+\tableofcontents[currentsubsection]
+\end{frame}
+}% AtBeginSection
 
 \mode<presentation>
 {
@@ -84,329 +89,44 @@ Johannes Gutenberg-Universität Mainz
 %___________________________________________________________________________________________________
 
 \section{Einführung}
-
-%___________________________________________________________________________________________________
-%___________________________________________________________________________________________________
-
-\subsection{Definition}
-
-%___________________________________________________________________________________________________
-
-\begin{frame}{Teilchendetektoren}
-	\begin{description}
-	  \item[Teilchendetektoren] Dienen dem Nachweis freier Teilchen durch Messung
-	  verschiedener Observablen
-	\end{description}
-	
-	\begin{block}{Häufig gemessene Eigenschaften}
-		\begin{itemize}\setlength{\itemsep}{+5pt}
-		  \item Geschwindigkeit
-		  \item Impuls
-		  \item Energie
-		  \item Trajektorie
-		  \item Zeit (Synchronisierung mit anderen Detektoren)
-		  \item Ladung
-		\end{itemize}
-	\end{block}
-\end{frame}
-
-%___________________________________________________________________________________________________
-
-	\begin{frame}{Spurdetektoren}
-	\begin{description}
-	  \item[Spurdetektoren] Bestimmen die Trajektorie eines Teilchens durch
-	  Detektion an verschiedenen Orten und anschließender Rekonstruktion der
-	  Bahnkurve
-	\end{description}
-	\begin{block}{Wozu die Trajektorie bestimmen?}
-		\begin{itemize}\setlength{\itemsep}{+5pt}
-		  \item Ursprung des Teilchens zurückverfolgen
-		  	\begin{itemize}\setlength{\itemsep}{+5pt}
-		    	\item Stammt teilchen vom
-		    	Kollisionspunkt$\rightarrow$Untergrundunterdrückung
-		  	\end{itemize}
-		  \item Messungen in Kombination mit Magnetfeld:
-		   	\begin{itemize}\setlength{\itemsep}{+5pt}
-		    	\item Ladung
-		    	\item Impuls
-		  	\end{itemize}
-		\end{itemize}
-	\end{block}
-\end{frame}
-
-%___________________________________________________________________________________________________
-%___________________________________________________________________________________________________
-
-\subsection{Motivation}
-
-%___________________________________________________________________________________________________
-
-\begin{frame}{Pile-Up}
-	An LHC-Experimenten wie ATLAS werden zukünftig alle 25 ns ca. 50
-	Proton-Proton-Kollisionen gleichzeitig gemessen
-	% http://iopscience.iop.org/1742-6596/513/2/022024/pdf/1742-6596_513_2_022024.pdf
-	
-	\begin{figure}[htp]
-	\begin{center}
-	  \includegraphics[width=\textwidth]{pileup.jpg}
-	  \caption{Simulierter Pile-Up am CMS Detektor}
-	\end{center}
-	\end{figure}
-	\vspace{-0.7cm}
-	
-	\begin{block}{Jede Kollision muss isoliert analysiert werden (E- und
-	p-Erhaltung)} Sekundärteilchen müssen je einer p-p-Kollision zugewiesen werden 
-	\end{block}
-	
-	\begin{exampleblock}{Spurrekonstruktion nahe der Kollision}
-		Schnittpunkt zwischen rekonstruierter Spur und Strahl stellt Ort der Kollision
-		dar
-	\end{exampleblock}
-\end{frame}
-
-%___________________________________________________________________________________________________
-
-
-\begin{frame}{Lorentzkraft}
-	\begin{block}{Kraft auf geladene Teilchen bei magnetischer Flussdichte
-	$\vec{B}$}
-		$\vec{F}_L = q \cdot (\vec{v} \times \vec{B})$
-	\end{block}
-
-	\begin{block}{$\vec{F}_L$ führt zu Kreisbahn mit radius $r$}
-		\begin{itemize}\setlength{\itemsep}{+5pt}
-		  \item $r = \frac{m \cdot v}{q \cdot B} \propto \frac{p}{q}$
-		  \item Vorzeichen der Krümmung ergibt Vorzeichen der Ladung $q$
-		\end{itemize}
-	\end{block}
-	\begin{exampleblock}{Häufig ist Ladung erlaubter Sekundärteilchen eingeschränkt}
-		$q \in \{- e, 0, +e\}$
-		$\Rightarrow p = \pm e \cdot r \cdot B$
-	\end{exampleblock}
-\end{frame}
+\input{einfuehrung}
+\input{grundlagenallg}
 
 %___________________________________________________________________________________________________
 %___________________________________________________________________________________________________
 %___________________________________________________________________________________________________
 
-\section{Grundlagen}
+% \section{Grundlagen}
 
-%___________________________________________________________________________________________________
-%___________________________________________________________________________________________________
-
-\subsection{Energieverlust in Materie}
-
-%___________________________________________________________________________________________________
-
-\begin{frame}{Energieverlust in Materie}
-	\begin{block}{Teilchendetektion $\Leftrightarrow$ Energieverlust im Detektor}
-		Geladene und ungeladene Teilchen übertragen einen Teil ihrer Energie an die
-		durchdrungene Materie	
-	\end{block}
-	
-	
-	% http://qgp.uni-muenster.de/~jowessel/pages/teaching/ss03/seminar/reiter.pdf
-	\begin{block}{Viele verschiedene mögliche Mechanismen}
-		\begin{itemize}
-		  \item Ionisation (Bethe-Bloch-Formel)
-		  \item Rutherford-Streuung
-		  \item Tscherenkow-Strahlung
-		  \item Bremsstrahlung
-		  \item Photoelektrischer Effekt
-		  \item Compton-Streuung
-		  \item Paarbildung
-		  \item \ldots
-		\end{itemize}
-	\end{block}
-\end{frame}
-
-%___________________________________________________________________________________________________
-
-\begin{frame}{Spurdetektoren}
-	\begin{block}{Ziel von Teilchendetektoren}
-		Absorbierte Energie in auswertbares Signal umwandeln 
-	\end{block}
-	
-	\begin{exampleblock}{Ziel der Spurdetektoren}
-		Signal muss Ortsinformation beinhalten
-	\end{exampleblock}
-\end{frame}
 
 %___________________________________________________________________________________________________
 %___________________________________________________________________________________________________
 %___________________________________________________________________________________________________
 
-\section{Spurdetektoren}
+\section{Gasdetektoren}
+\input{grundlagengas}
+\input{nebelblasenkammer}
+\input{zaehlrohr}
+% \input{vieldraht}
+% \input{driftkammer}
+% \input{tpc}
+% \input{gems}
+% \input{micromegas}
+
+%___________________________________________________________________________________________________
+%___________________________________________________________________________________________________
+%___________________________________________________________________________________________________
+
+
+% \section{Halbleiterdetektoren}
+% \input{Pixeldetektoren}
+% \input{nummer2}
+% \input{nummer3?}
 
 %___________________________________________________________________________________________________
 %___________________________________________________________________________________________________
 
-\subsection{Nebel- und Blasenkammer}
-
-%___________________________________________________________________________________________________
-
-\begin{frame}{Nebelkammer}
-	Erfindung 1911 durch Charles Wilson
-	\begin{block}{Kammer mit übersättigtem Wasserdampf}
-		\begin{itemize}
-		  \item Ionisierende Strahlung bildet Ionen-Elektronen-Paare im Gas
-		  \item Ionen wirken als Kondensationskeim
-		  \item Kondensierte Tröpfchen bilden sichtbaren Kondensstreifen 
-		  \item Fotografie der Kondensstreifen für spätere Spurrekonstruktion
-		\end{itemize}
-	\end{block}
-	Später: Übersättigte Luft-Alkohol-Gemische\\
-	Heute: Nur noch für demonstrative Zwecke
-\end{frame}
-
-%___________________________________________________________________________________________________
-
-\begin{frame}{Blasenkammer}
-	Erfindung 1952 durch Donals A. Glaser
-	\begin{block}{Ähnliches Prinzip wie Nebelkammer}
-		\begin{itemize}
-		  \item Metastabiler Zustand von flüssigem Wasserstoff bei adiabatischer
-		  Druckänderung
-		  \item Ionen wirken als Siedekeim
-		  \item Entstandene Bläschen visualisieren Teilchenspur 
-		  \item Fotografie der Blasenspuren für spätere Rekonstruktion
-		\end{itemize}
-	\end{block}
-\end{frame}
-
-%___________________________________________________________________________________________________
-
-\begin{frame}{Blasenkammer - Aufbau}
-    \begin{columns}[T]
-    
-	    \column{.6\textwidth}
-			\begin{figure}[htbp]
-			  \centering
-			  \includesvg[width=\textwidth]{Blasenkammer}
-			  \caption{Blasenkammer mit B-Feld [wbk]}
-			\end{figure}
-			
-	    \column{.45\textwidth}
-	    	\begin{enumerate}
-			  \item Kurz vor Messung wird Druck verringert
-			  \item Temperatur nun oberhalb des Siedepunktes
-			  \item Kameras bilden Blasenspuren ab
-			  \item 3D-Rekonstruktion der Spuren möglich
-			  \item Druck wird wieder erhöht damit sich Blasen wieder lösen  
-			\end{enumerate}
-    \end{columns}
-\end{frame}
-
-%___________________________________________________________________________________________________
-
-\begin{frame}{Nebel- und Blasenkammern}
-    \begin{columns}[T]
-		\column{.45\textwidth}
-			Vorteile		
-			\begin{itemize}
-			  \item Bahnen direkt sichtbar (einfache Rekonstruktion)
-			  \item Günstig
-			  \item Gute Ortsauflösung: $O(1 \mu m)$
-			\end{itemize}	
-	    \column{.5\textwidth}
-	    	Nachteile
-	    	\begin{itemize}
-			  \item Langsame Bildung der Spur
-			  \item Nur Nebelkammer kann kontinuierlich betrieben werden
-			  \item Viel Materie (WW mit Teilchen)
-			\end{itemize}
-    \end{columns}
-    \vspace{1cm}
-    Nebelkammern nur noch für demonstrative Zwecke, Blasenkammern finden noch
-    Einsatz bei Messungen mit geringen Raten (WIMP)
-\end{frame}
-
-\section{Spurdetektoren}
-
-%___________________________________________________________________________________________________
-%___________________________________________________________________________________________________
-
-\subsection{Vieldraht Proportionalkammer}
-
-%___________________________________________________________________________________________________
-
-\begin{frame}{Zählrohr}
-    \begin{columns}[T]
-    
-	    \column{.6\textwidth}
-			\begin{figure}[htbp]
-			  \centering
-			  \includesvg[width=\textwidth]{zaehlrohr}
-			  \caption{Aufbau eines Zählrors [wzr]}
-			\end{figure}
-			
-	    \column{.45\textwidth}
-	    	\begin{itemize}
-	    	  \item Gasgefülltes Rohr
-			  \item Hochspannung zwischen Kathode und Anode
-			  \item Ionisierende Strahlung bildet freie Elektronen
-			  \item Diese driften zur Anode	
-			  \item Stromimpuls wird gemessen
-			\end{itemize}
-    \end{columns}
-\end{frame}
-
-%___________________________________________________________________________________________________
-
-\begin{frame}{Zählrohr-Kennlinie}
-	Zählrohrspannung beschleunigt freie Elektronen Richtung Anode \\
-	Funktionsweise stark abhängig von Spannung
-	
-	\begin{figure}[htbp]
-	  \centering
-	  \includesvg[height=0.5\textheight]{zaehlrohr-kennlinie}
-	  \caption{Kennlinie eines Zählrors [wzk]}
-	\end{figure}
-	
-\end{frame}	
-
-%___________________________________________________________________________________________________
-
-\begin{frame}{Zählrohr-Modi}
-	\begin{block}{Geringe Spannung ($\ll 100V$): Rekombination}
-		\begin{itemize}
-		  	\item $e^-$ können mit Ionen rekombinieren
-		  	\item Nur wenige Elektronen erreichen Anode
-		  	\item Strompuls abhängig von Abstand der Ionisation
-		\end{itemize}
-	\end{block}
-	
-	\begin{block}{Höhere Spannung ($O(100V)$): Ionisationskammer}
-		\begin{itemize}
-		  	\item Keine Rekombination: Alle $e^-$ erreichen Anode
-		  	\item Strompuls proportional zur Anzahl der Elektronen
-			\item \textbf{Messung der absorbierten Energie möglich}
-		\end{itemize}
-	\end{block}
-	
-\end{frame}
-
-\begin{frame}{Zählrohr-Modi}
-	\begin{block}{Höhere Spannung: Proportionalzählrohr}
-		\begin{itemize}
-		  	\item $e^-$ ionisieren nahe der Anode weitere Atome (Lawinen)
-			\item $\Rightarrow$ Verstärkung des Strompulses
-		  	\item Signal weiterhin proportional zur absorbierten Energie
-		\end{itemize}
-	\end{block}
-	
-	\begin{block}{Höchste Spannung: Geiger-Müller-Bereich}
-		\begin{itemize}
-	  		\item Energie so hoch, dass UV-Strahlung entsteht, die weitere Stellen
-	  		Ionisiert
-	  		\item Komplette Ionisierung der Kammer $\Rightarrow$ Gasentladung
-	  		\item Keine Energiemessung $\Leftrightarrow$ Reiner Zähler
-	  		\item Hohe Totzeit (ca. $100\mu s$)
-		\end{itemize}
-	\end{block}
-	Noch höhere Spannung führt zur spontanen Gasentladung
-\end{frame}
-
+\section{Pixeldetektoren}
 
 %___________________________________________________________________________________________________
 %___________________________________________________________________________________________________
