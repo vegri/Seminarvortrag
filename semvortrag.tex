@@ -96,13 +96,6 @@ Johannes Gutenberg-Universität Mainz
 %___________________________________________________________________________________________________
 %___________________________________________________________________________________________________
 
-% \section{Grundlagen}
-
-
-%___________________________________________________________________________________________________
-%___________________________________________________________________________________________________
-%___________________________________________________________________________________________________
-
 \section{Gasdetektoren}
 \input{grundlagengas}
 \input{nebelblasenkammer}
@@ -118,31 +111,29 @@ Johannes Gutenberg-Universität Mainz
 %___________________________________________________________________________________________________
 
 
-% \section{Halbleiterdetektoren}
-% \input{Pixeldetektoren}
-% \input{nummer2}
-% \input{nummer3?}
-
-%___________________________________________________________________________________________________
-%___________________________________________________________________________________________________
-
-\section{Pixeldetektoren}
+\section{Halbleiterdetektoren}
+\input{grundlagenpixel}
+\input{pixel}
 
 %___________________________________________________________________________________________________
 %___________________________________________________________________________________________________
 %___________________________________________________________________________________________________
-
-\section{Spurrekonstruktion}
-
+\AtBeginSection[]{%
+	\begin{frame}
+		\tableofcontents[currentsection]
+	\end{frame}
+}% AtBeginSection
+\section{Zusammenfassung und Vergleich}
+\input{zusammenfassung}
 %___________________________________________________________________________________________________
 %___________________________________________________________________________________________________
-
-\subsection{Hough-Transformation}
+% \section{Spurrekonstruktion}
+% \subsection{Hough-Transformation}
 
 
 %___________________________________________________________________________________________________
 
-\begin{frame}{Literaturverzeichnis}
+\begin{frame}{Abbildungsverzeichnis}
 	\begin{adjustwidth}{-5em}{-2em}
 	  	\begin{description}
 		  	\item[wbk]
@@ -157,6 +148,10 @@ Johannes Gutenberg-Universität Mainz
 		  	http://upload.wikimedia.org/wikipedia/commons/2/22/Wire\_chamber\_E\_field.svg
 		  	\item[cpu]
 		  	http://francis.naukas.com/2012/06/16/ya-hay-colisiones-proton-proton-en-el-lhc-que-presentan-mas-de-30-vertices-apilados/
+		  	\item[gpn]
+		  	http://elektronik-kurs.net/wp-content/uploads/2012/05/Bildschirmfoto-2012-05-30-um-14.28.03.png
+		  	\item[gsp]
+		  	https://mkeil.web.cern.ch/mkeil/papers/diss.pdf
 		\end{description}
 	\end{adjustwidth}  
 \end{frame}
