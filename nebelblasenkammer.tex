@@ -4,6 +4,7 @@
 
 \begin{frame}{Nebelkammer}
 	Erfindung 1911 durch Charles Wilson
+	\vspace{0.7cm}
 	\begin{block}{Kammer mit übersättigtem Wasserdampf}
 		\begin{itemize}
 		  \item Ionisierende Strahlung bildet Ionen-Elektronen-Paare im Gas
@@ -12,68 +13,113 @@
 		  \item Fotografie der Kondensstreifen für spätere Spurrekonstruktion
 		\end{itemize}
 	\end{block}
+	\vspace{0.7cm}
 	Später: Übersättigte Luft-Alkohol-Gemische\\
-	Heute: Nur noch für demonstrative Zwecke
+
 \end{frame}
 
 %___________________________________________________________________________________________________
 
-\begin{frame}{Blasenkammer}
-	Erfindung 1952 durch Donals A. Glaser
-	\begin{block}{Ähnliches Prinzip wie Nebelkammer}
-		\begin{itemize}
-		  \item Metastabiler Zustand von flüssigem Wasserstoff bei adiabatischer
-		  Druckänderung
-		  \item Ionen wirken als Siedekeim
-		  \item Entstandene Bläschen visualisieren Teilchenspur 
-		  \item Fotografie der Blasenspuren für spätere Rekonstruktion
-		\end{itemize}
-	\end{block}
-\end{frame}
 
-%___________________________________________________________________________________________________
 
-\begin{frame}{Blasenkammer - Aufbau}
+\begin{frame}{Funkenkammer - Aufbau}
     \begin{columns}[T]
     
-	    \column{.6\textwidth}
+	    \column{.5\textwidth}
 			\begin{figure}[htbp]
 			  \centering
-			  \includesvg[svgpath=bilder/, width=\textwidth]{Blasenkammer}
-			  \caption{Blasenkammer mit B-Feld [wbk]}
+			  \includegraphics[width=\textwidth]{prinzipfk.jpg}
+			  \caption{Aufbau einer Funkenkammer [gfa]}
 			\end{figure}
 			
-	    \column{.45\textwidth}
-	    	\begin{enumerate}
-			  \item Kurz vor Messung wird Druck verringert
-			  \item Temperatur nun oberhalb des Siedepunktes
-			  \item Kameras bilden Blasenspuren ab
-			  \item 3D-Rekonstruktion der Spuren möglich
-			  \item Druck wird wieder erhöht damit sich Blasen wieder lösen  
-			\end{enumerate}
+	    \column{.5\textwidth}
+	    	\begin{itemize}
+			  \item Zwischen mehreren leitenden Platten in Edelgas liegt abwechselnde HV an
+			  \item Ionisierende Strahlung bildet Ionen-Elektronen-Paare im Gas
+			  \item Funken springen zwischen Platten über - entlang der Ionisationsspur
+			  \item HV meist getriggert durch Szintillatoren
+			\end{itemize}
     \end{columns}
 \end{frame}
 
 %___________________________________________________________________________________________________
 
-\begin{frame}{Nebel- und Blasenkammern}
+\begin{frame}{Funkenkammer - Aufbau}
+    \begin{columns}[T]
+	    \column{.5\textwidth}
+	    Nebelkammer [gnk]
+			\begin{figure}[htbp]
+			  \centering
+			  \includegraphics[width=\columnwidth]{nebelkammer.jpg}
+			\end{figure}
+			
+	    \column{.5\textwidth}
+	    Funkenkammer [gfk]
+	    	\begin{figure}[htbp]
+			  \centering
+			  \includegraphics[width=\columnwidth*2/3]{funkenkammer.jpg}
+			\end{figure}
+    \end{columns}
+\end{frame}
+
+% \begin{frame}{Blasenkammer}
+% 	Erfindung 1952 durch Donals A. Glaser
+% 	\begin{block}{Ähnliches Prinzip wie Nebelkammer}
+% 		\begin{itemize}
+% 		  \item Metastabiler Zustand von flüssigem Wasserstoff bei adiabatischer
+% 		  Druckänderung
+% 		  \item Ionen wirken als Siedekeim
+% 		  \item Entstandene Bläschen visualisieren Teilchenspur 
+% 		  \item Fotografie der Blasenspuren für spätere Rekonstruktion
+% 		\end{itemize}
+% 	\end{block}
+% \end{frame}
+% 
+% %___________________________________________________________________________________________________
+% 
+% \begin{frame}{Blasenkammer - Aufbau}
+%     \begin{columns}[T]
+%     
+% 	    \column{.6\textwidth}
+% 			\begin{figure}[htbp]
+% 			  \centering
+% 			  \includesvg[svgpath=bilder/, width=\textwidth]{Blasenkammer}
+% 			  \caption{Blasenkammer mit B-Feld [wbk]}
+% 			\end{figure}
+% 			
+% 	    \column{.45\textwidth}
+% 	    	\begin{enumerate}
+% 			  \item Kurz vor Messung wird Druck verringert
+% 			  \item Temperatur nun oberhalb des Siedepunktes
+% 			  \item Kameras bilden Blasenspuren ab
+% 			  \item 3D-Rekonstruktion der Spuren möglich
+% 			  \item Druck wird wieder erhöht damit sich Blasen wieder lösen  
+% 			\end{enumerate}
+%     \end{columns}
+% \end{frame}
+
+%___________________________________________________________________________________________________
+
+\begin{frame}{Nebel- und Funkenkammern}
     \begin{columns}[T]
 		\column{.45\textwidth}
 			Vorteile		
+			\vspace{0.7cm}
 			\begin{itemize}
 			  \item Bahnen direkt sichtbar (einfache Rekonstruktion)
 			  \item Günstig
-			  \item Gute Ortsauflösung: $O(1 \mu m)$
+			  \item Gute Ortsauflösung Nebelkammer: $O(1 \mu m)$
 			\end{itemize}	
 	    \column{.5\textwidth}
 	    	Nachteile
+	    	\vspace{0.7cm}
 	    	\begin{itemize}
 			  \item Langsame Bildung der Spur
 			  \item Nur Nebelkammer kann kontinuierlich betrieben werden
 			  \item Viel Materie (WW mit Teilchen)
+			  \item Ortsauflösung Funkenkammer: $O(1 mm)$
 			\end{itemize}
     \end{columns}
     \vspace{1cm}
-    Nebelkammern nur noch für demonstrative Zwecke, Blasenkammern finden noch
-    Einsatz bei Messungen mit geringen Raten (WIMP)
+    Heute: Nur noch für demonstrative Zwecke
 \end{frame}

@@ -23,11 +23,7 @@
 % 	\end{frame}
 % }% AtBeginSection
 
-\AtBeginSubsection[]{%
-\begin{frame}
-\tableofcontents[currentsubsection]
-\end{frame}
-}% AtBeginSection
+
 
 \mode<presentation>
 {
@@ -92,6 +88,12 @@ Johannes Gutenberg-Universität Mainz
 \input{einfuehrung}
 \input{grundlagenallg}
 
+
+\AtBeginSubsection[]{%
+\begin{frame}
+\tableofcontents[currentsubsection]
+\end{frame}
+}% AtBeginSection
 %___________________________________________________________________________________________________
 %___________________________________________________________________________________________________
 %___________________________________________________________________________________________________
@@ -109,7 +111,6 @@ Johannes Gutenberg-Universität Mainz
 %___________________________________________________________________________________________________
 %___________________________________________________________________________________________________
 %___________________________________________________________________________________________________
-
 
 \section{Halbleiterdetektoren}
 \input{grundlagenpixel}
@@ -134,10 +135,17 @@ Johannes Gutenberg-Universität Mainz
 %___________________________________________________________________________________________________
 
 \begin{frame}{Abbildungsverzeichnis}
+\footnotesize
 	\begin{adjustwidth}{-5em}{-2em}
 	  	\begin{description}
 		  	\item[wbk]
 		  	https://de.wikipedia.org/w/index.php?title=Datei:Blasenkammer.svg
+		  	\item[gfa]
+		  	http://www.rapp-instruments.de/Radioaktivitaet/Funkenkammer/multigap/spark.htm
+		  	\item[gfk]
+		  	http://kworkquark.desy.de/lexikon/lexikon.funkenkammer/0/
+		  	\item[gnk]
+		  	http://www2.slgb.ch/users/soe/Physik/Hochenergie/teilchen/teilchen.htm
 		  	\item[wzr]
 		  	https://de.wikipedia.org/wiki/Datei:Geiger\_Mueller\_Counter\_with\_Circuit-de.svg
 		  	\item[wzk]
