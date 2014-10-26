@@ -15,7 +15,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="pnuebergang.svg">
+   sodipodi:docname="diode-pnuebergang.svg">
   <defs
      id="defs4">
     <marker
@@ -96,11 +96,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="45.254834"
-     inkscape:cx="21.607344"
-     inkscape:cy="126.49086"
+     inkscape:zoom="2.8284271"
+     inkscape:cx="107.28904"
+     inkscape:cy="142.27973"
      inkscape:document-units="px"
-     inkscape:current-layer="g3881"
+     inkscape:current-layer="g5008"
      showgrid="false"
      inkscape:window-width="1440"
      inkscape:window-height="851"
@@ -121,7 +121,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -179,7 +179,7 @@
            transform="translate(3.1112196,3.8149883)">
           <path
              transform="translate(0.2543751,-0.04940734)"
-             d="m 69.650018,203.65727 a 6.1871843,6.1871843 0 1 1 -12.374369,0 6.1871843,6.1871843 0 1 1 12.374369,0 z"
+             d="m 69.650018,203.65727 c 0,3.41709 -2.770097,6.18719 -6.187185,6.18719 -3.417087,0 -6.187184,-2.7701 -6.187184,-6.18719 0,-3.41709 2.770097,-6.18718 6.187184,-6.18718 3.417088,0 6.187185,2.77009 6.187185,6.18718 z"
              sodipodi:ry="6.1871843"
              sodipodi:rx="6.1871843"
              sodipodi:cy="203.65727"
@@ -200,7 +200,8 @@
         </g>
         <g
            id="g5174"
-           style="fill:#009a18;fill-opacity:1;stroke:none">
+           style="fill:#009a18;fill-opacity:1;stroke:none"
+           transform="matrix(-1,0,0,1,378.8513,0)">
           <path
              style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#009a18;fill-opacity:1;stroke:none;stroke-width:1px;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Sans;-inkscape-font-specification:Sans"
              d="m 169.5625,205.875 0,1 25.8125,0 0,-1 -25.8125,0 z"
@@ -214,7 +215,8 @@
         </g>
         <g
            id="g5182"
-           style="fill:#009a18;fill-opacity:1;stroke:none">
+           style="fill:#009a18;fill-opacity:1;stroke:none"
+           transform="matrix(-1,0,0,1,378.8513,0)">
           <path
              style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#009a18;fill-opacity:1;stroke:none;stroke-width:1px;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Sans;-inkscape-font-specification:Sans"
              d="m 169.5625,255.15625 0,1 25.8125,0 0,-1 -25.8125,0 z"
@@ -229,7 +231,7 @@
         <use
            height="1052.3622"
            width="744.09448"
-           transform="translate(136.75766,-1.0606602)"
+           transform="matrix(-1,0,0,1,242.09364,-1.0606602)"
            id="use4757"
            xlink:href="#g3881"
            y="0"
@@ -237,7 +239,7 @@
         <use
            height="1052.3622"
            width="744.09448"
-           transform="translate(136.75766,48.243193)"
+           transform="matrix(-1,0,0,1,242.09364,48.243193)"
            id="use4757-8"
            xlink:href="#g3881"
            y="0"
@@ -432,7 +434,8 @@
         </g>
         <g
            id="g5190"
-           style="fill:#a70000;fill-opacity:1;stroke:none">
+           style="fill:#a70000;fill-opacity:1;stroke:none"
+           transform="matrix(-1,0,0,1,378.8513,0)">
           <path
              style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#a70000;fill-opacity:1;stroke:none;stroke-width:1px;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Sans;-inkscape-font-specification:Sans"
              d="m 169.5625,225.875 0,1 25.8125,0 0,-1 -25.8125,0 z"
@@ -446,7 +449,8 @@
         </g>
         <g
            id="g5198"
-           style="fill:#a70000;fill-opacity:1;stroke:none">
+           style="fill:#a70000;fill-opacity:1;stroke:none"
+           transform="matrix(-1,0,0,1,378.8513,0)">
           <path
              style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#a70000;fill-opacity:1;stroke:none;stroke-width:1px;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Sans;-inkscape-font-specification:Sans"
              d="m 169.5625,275.15625 0,1 25.8125,0 0,-1 -25.8125,0 z"
@@ -461,7 +465,7 @@
         <use
            height="1052.3622"
            width="744.09448"
-           transform="translate(136.75766,18.93934)"
+           transform="matrix(-1,0,0,1,242.09364,18.93934)"
            id="use4757-5"
            xlink:href="#g3881-5"
            y="0"
@@ -469,7 +473,7 @@
         <use
            height="1052.3622"
            width="744.09448"
-           transform="translate(136.75766,68.243193)"
+           transform="matrix(-1,0,0,1,242.09364,68.243193)"
            id="use4757-8-6"
            xlink:href="#g3881-5"
            y="0"
@@ -622,7 +626,7 @@
          id="tspan5168"
          x="155.42847"
          y="176.45276"
-         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Sans;-inkscape-font-specification:Sans">Drift</tspan></text>
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Sans;-inkscape-font-specification:Sans" /></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker5048)"
        d="M 164.5,177.86218 156,198.36219"
@@ -741,7 +745,7 @@
            height="33.23402"
            x="163.34166"
            y="-1.230126" /></flowRegion><flowPara
-         id="flowPara5478"></flowPara></flowRoot>    <flowRoot
+         id="flowPara5478" /></flowRoot>    <flowRoot
        xml:space="preserve"
        id="flowRoot5480"
        style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
@@ -793,5 +797,17 @@
        d="m 204.88193,274.45964 32.46719,56.23481"
        id="path5517-3"
        inkscape:connector-curvature="0" />
-  </g>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3103"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       transform="translate(37.974873,175.33557)"><flowRegion
+         id="flowRegion3105"><rect
+           id="rect3107"
+           width="78.1353"
+           height="36.416"
+           x="90.156113"
+           y="-11.296503" /></flowRegion><flowPara
+         id="flowPara3109"
+         style="text-align:center;text-anchor:middle">Diffusion</flowPara></flowRoot>  </g>
 </svg>
