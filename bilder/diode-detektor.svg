@@ -11,7 +11,7 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="286.625"
-   height="162.62184"
+   height="176.31589"
    id="svg2"
    version="1.1"
    inkscape:version="0.48.4 r9939"
@@ -292,9 +292,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2"
-     inkscape:cx="114.56799"
-     inkscape:cy="70.739483"
+     inkscape:zoom="2.8284271"
+     inkscape:cx="149.25637"
+     inkscape:cy="78.149914"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -325,7 +325,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-24.625,-163.31566)">
+     transform="translate(-24.625,-149.62162)">
     <path
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 296.25585,230.28745 14.49569,0 0,83.08505 -40.73785,0"
@@ -1115,17 +1115,17 @@
        xml:space="preserve"
        id="flowRoot5278"
        style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
-       transform="translate(-3.6592717,167.34686)"><flowRegion
+       transform="translate(-8.012825,149.34686)"><flowRegion
          id="flowRegion5280"><rect
            id="rect5282"
-           width="95.812965"
-           height="37.476658"
+           width="96.520065"
+           height="44.547726"
            x="127.98633"
            y="-6.8723488" /></flowRegion><flowPara
          id="flowPara5284"
-         style="text-align:center;text-anchor:middle">autreffende </flowPara><flowPara
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:170.00000477%;writing-mode:lr-tb;text-anchor:middle;font-family:Sans;-inkscape-font-specification:Sans">autreffende </flowPara><flowPara
          id="flowPara5286"
-         style="text-align:center;text-anchor:middle">Teilchen</flowPara></flowRoot>    <g
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:195.00000477%;writing-mode:lr-tb;text-anchor:middle;font-family:Sans;-inkscape-font-specification:Sans">Teilchen</flowPara></flowRoot>    <g
        id="g5395"
        transform="translate(-3.8890873,-7.4246212)">
       <use
@@ -1380,7 +1380,7 @@
        sodipodi:nodetypes="cc" />
     <path
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker5300)"
-       d="m 160.05613,21.765476 c -0.7071,1.414213 9.29594,45.608387 9.29594,45.608387"
+       d="m 159.70258,17.876389 c -0.7071,1.414213 9.64949,49.497474 9.64949,49.497474"
        id="path5425"
        inkscape:connector-curvature="0"
        transform="translate(24.625,166.63975)"
