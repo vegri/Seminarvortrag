@@ -3,23 +3,25 @@
 \begin{frame}{Driftkammer}
     \begin{columns}[T]
 	    \column{.5\textwidth}
-			\begin{figure}[htbp]
-			  \centering
-			  \includegraphics[width=\textwidth]{drift.jpg}
-			  \caption{Aufbau einer Driftkammer}
-			\end{figure}
-			
-	    \column{.55\textwidth}
 	    	\begin{itemize}
 	    	  \item Messung der Ortsinformation durch Messung der Driftzeit
 			  \item Aufbau: Proportionalzähler mit Trigger (Szintillator $\rightarrow$ schnelles Signal)
 			  \item Trigger gibt den Zeitpunkt $t_0$, an dem Teilchen eintrifft
+			\end{itemize}
+			
+	    \column{.5\textwidth}
+	    	\begin{itemize}
 			  \item Anode gibt den Zeitpunkt $t_1$, an dem Signal (Elektronen) eintrifft
 			  \item bei bekannter Driftgeschw. $u$: Distanz von Enstehungsort zu Anode ist
 			  $x=\int_{t_0}^{t_1}u\cdot dt$
 			\end{itemize}
-			
     \end{columns}
+
+	\begin{figure}[htbp]
+	  	\centering
+		\includesvg[svgpath=bilder/, width=0.7\textwidth]{drift}
+	  	\caption{Aufbau einer Driftkammer}
+	\end{figure}
 \end{frame}
 
 \begin{frame}{Driftkammer}
