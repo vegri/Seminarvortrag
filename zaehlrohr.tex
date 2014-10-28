@@ -7,15 +7,15 @@
 			\begin{figure}[htbp]
 			  \centering
 			  \includesvg[svgpath=bilder/, width=\textwidth]{zaehlrohr}
-			  \caption{Aufbau eines Zählrors [wzr]}
+			  \caption{Aufbau eines Zählrohrs [wzr]}
 			\end{figure}
 			
 	    \column{.45\textwidth}
 	    	\begin{itemize}
-	    	  \item Gasgefülltes Rohr
+	    	  \item gasgefülltes Rohr
 			  \item Hochspannung zwischen Kathode und Anode
-			  \item Ionisierende Strahlung bildet freie Elektronen
-			  \item Diese driften zur Anode	
+			  \item ionisierende Strahlung bildet freie $e^-$/Ionen-Paare
+			  \item diese driften zur Anode/Kathode
 			  \item Stromimpuls wird gemessen
 			\end{itemize}
     \end{columns}
@@ -36,42 +36,41 @@
 
 %___________________________________________________________________________________________________
 
-\begin{frame}{Zählrohr-Modi}
-	\begin{block}{Geringe Spannung ($\ll 100V$): Rekombination}
-		\begin{itemize}
-		  	\item $e^-$ können mit Ionen rekombinieren
-		  	\item Nur wenige Elektronen erreichen Anode
-		  	\item Strompuls abhängig von Abstand der Ionisation
-		\end{itemize}
-	\end{block}
+% \begin{frame}{Zählrohr-Modi}
+% 	\begin{block}{Geringe Spannung ($\ll 100V$): Rekombination}
+% 		\begin{itemize}
+% 		  	\item $e^-$ können mit Ionen rekombinieren
+% 		  	\item Nur wenige Elektronen erreichen Anode
+% 		  	\item Strompuls abhängig von Abstand der Ionisation
+% 		\end{itemize}
+% 	\end{block}
+% 	
+% 	\begin{block}{Höhere Spannung ($O(100V)$): Ionisationskammer}
+% 		\begin{itemize}
+% 		  	\item Keine Rekombination: Alle $e^-$ erreichen Anode
+% 		  	\item Strompuls proportional zur Anzahl der Elektronen
+% 			\item \textbf{Messung der absorbierten Energie möglich}
+% 		\end{itemize}
+% 	\end{block}
 	
-	\begin{block}{Höhere Spannung ($O(100V)$): Ionisationskammer}
-		\begin{itemize}
-		  	\item Keine Rekombination: Alle $e^-$ erreichen Anode
-		  	\item Strompuls proportional zur Anzahl der Elektronen
-			\item \textbf{Messung der absorbierten Energie möglich}
-		\end{itemize}
-	\end{block}
-	
-\end{frame}
+% \end{frame}
 
-\begin{frame}{Zählrohr-Modi}
-	\begin{block}{Höhere Spannung: Proportionalzählrohr}
+\begin{frame}{Proportionalzählrohr/-kammer}
+	\begin{block}{Funktion}
 		\begin{itemize}
-		  	\item $e^-$ ionisieren nahe der Anode weitere Atome (Lawinen)
+		  \item Spannung im Bereich 200-500~V
+		  	\item $e^-$ ionisieren nahe der Anode weitere Atome (lokale Ladungslawinen)
 			\item $\Rightarrow$ Verstärkung des Strompulses
 		  	\item Signal weiterhin proportional zur absorbierten Energie
 		\end{itemize}
 	\end{block}
 	
-	\begin{block}{Höchste Spannung: Geiger-Müller-Bereich}
+	\begin{block}{Gasentladung}
 		\begin{itemize}
-	  		\item Energie so hoch, dass UV-Strahlung entsteht, die weitere Stellen
+	  		\item wenn Energie so hoch, dass UV-Strahlung entsteht, die weitere Stellen
 	  		Ionisiert
-	  		\item Komplette Ionisierung der Kammer $\Rightarrow$ Gasentladung
-	  		\item Keine Energiemessung $\Leftrightarrow$ Reiner Zähler
-	  		\item Hohe Totzeit (ca. $100\mu s$)
+	  		\item Komplette Ionisierung der Kammer 
 		\end{itemize}
 	\end{block}
-	Noch höhere Spannung führt zur spontanen Gasentladung
+% 	Noch höhere Spannung führt zur spontanen Gasentladung
 \end{frame}

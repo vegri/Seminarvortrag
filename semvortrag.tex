@@ -89,11 +89,11 @@ Johannes Gutenberg-Universität Mainz
 \input{grundlagenallg}
 
 
-\AtBeginSubsection[]{%
-\begin{frame}
-\tableofcontents[currentsubsection]
-\end{frame}
-}% AtBeginSection
+% \AtBeginSubsection[]{%
+% \begin{frame}
+% \tableofcontents[currentsubsection]
+% \end{frame}
+% }% AtBeginSection
 %___________________________________________________________________________________________________
 %___________________________________________________________________________________________________
 %___________________________________________________________________________________________________
@@ -119,6 +119,11 @@ Johannes Gutenberg-Universität Mainz
 %___________________________________________________________________________________________________
 %___________________________________________________________________________________________________
 %___________________________________________________________________________________________________
+% \AtBeginSection[]{%
+% 	\begin{frame}
+% 		\tableofcontents[currentsection]
+% 	\end{frame}
+}% AtBeginSection
 
 \section{Szintillationsdetektoren}
 \input{szinti}
@@ -126,11 +131,7 @@ Johannes Gutenberg-Universität Mainz
 %___________________________________________________________________________________________________
 %___________________________________________________________________________________________________
 %___________________________________________________________________________________________________
-\AtBeginSection[]{%
-	\begin{frame}
-		\tableofcontents[currentsection]
-	\end{frame}
-}% AtBeginSection
+
 \section{Zusammenfassung und Vergleich}
 \input{zusammenfassung}
 %___________________________________________________________________________________________________
@@ -151,6 +152,8 @@ Johannes Gutenberg-Universität Mainz
 		  	http://www.rapp-instruments.de/Radioaktivitaet/Funkenkammer/multigap/spark.htm
 		  	\item[gfk]
 		  	http://kworkquark.desy.de/lexikon/lexikon.funkenkammer/0/
+		  	\item[epo]
+		  	http://scienceblogs.de/astrodicticum-simplex/2014/09/01/was-ist-antimaterie/
 		  	\item[gnk]
 		  	http://www2.slgb.ch/users/soe/Physik/Hochenergie/teilchen/teilchen.htm
 		  	\item[wzr]
@@ -163,10 +166,13 @@ Johannes Gutenberg-Universität Mainz
 		  	http://upload.wikimedia.org/wikipedia/commons/2/22/Wire\_chamber\_E\_field.svg
 		  	\item[cpu]
 		  	http://francis.naukas.com/2012/06/16/ya-hay-colisiones-proton-proton-en-el-lhc-que-presentan-mas-de-30-vertices-apilados/
-		  	\item[gpn]
-		  	http://elektronik-kurs.net/wp-content/uploads/2012/05/Bildschirmfoto-2012-05-30-um-14.28.03.png
+		  	\item[scf]
+		  	http://www.kuraray.co.jp/en/release/2010/101222.html
 		  	\item[gsp]
 		  	https://mkeil.web.cern.ch/mkeil/papers/diss.pdf
+		  	\item[stg]
+		  	http://www.crystals.saint-gobain.com/uploadedFiles/SG-Crystals/Documents/SGC\%20Organics\%20Brochure.pdf
+		  	
 		\end{description}
 	\end{adjustwidth}  
 \end{frame}
