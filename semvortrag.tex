@@ -15,16 +15,23 @@
 % Margin
 \setbeamersize{text margin left=30pt,text margin right=30pt}
 
-\graphicspath{ {bilder/} }
+% \graphicspath{ {bilder/} }\AtBeginSection[]{%
+% 	\begin{frame}[noframenumbering]
+% 		\tableofcontents[currentsection]
+% 	\end{frame}
+% }% AtBeginSection
 
-\AtBeginSection[]{%
-	\begin{frame}
-		\tableofcontents[currentsection]
-		\thispagestyle{empty}
+\newcommand{\doinsertframenumbers}{\insertframenumber{} /
+\inserttotalframenumber\hspace*{1ex}}
+\newcommand{\insertframenumbers}{\doinsertframenumbers}
+
+ \AtBeginSubsection[]{%
+	\renewcommand{\insertframenumbers}{}
+	\begin{frame}[noframenumbering]
+		\tableofcontents[currentsubsection]
 	\end{frame}
-}% AtBeginSection
-
-
+	\renewcommand{\insertframenumbers}{\doinsertframenumbers}
+ }% AtBeginSection
 
 \mode<presentation>
 {
@@ -47,7 +54,20 @@
 \usepackage[scaled=.90]{helvet}
 \usepackage{courier}
 \beamertemplatenavigationsymbolsempty 
-\setbeamertemplate{footline}{}
+\setbeamertemplate{footline}
+{
+  \leavevmode%
+  \hbox{%
+  \begin{beamercolorbox}[wd=.4\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+    \usebeamerfont{author in head/foot}\insertshortauthor
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.6\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
+    \usebeamerfont{title in head/foot}\insertshorttitle\hspace*{3em}
+    \insertframenumbers
+  \end{beamercolorbox}}%
+  \vskip0pt%
+}
+
 
 %\usepackage[T1]{fontenc}
 \title{Spurdetektoren}
@@ -66,9 +86,6 @@ Johannes Gutenberg-Universität Mainz
 % Logo Universität
 \titlegraphic{\includegraphics[width=4cm]{bilder/JGU-Logo_sw_high.jpg}\hspace*{-8.5cm}}
 
-\setbeamertemplate{footline}[frame number] 
-
-
 \begin{document}
 
 \begin{frame}
@@ -76,12 +93,13 @@ Johannes Gutenberg-Universität Mainz
 \thispagestyle{empty}
 \end{frame}
 
-\begin{frame}
-\frametitle{Inhalt}
-\tableofcontents
-\thispagestyle{empty}
+\renewcommand{\insertframenumbers}{}
+\begin{frame}[noframenumbering]
+	\frametitle{Inhalt}
+	\tableofcontents
+	\setcounter{framenumber}{0}
 \end{frame}
-
+\renewcommand{\insertframenumbers}{\doinsertframenumbers}
 
 %___________________________________________________________________________________________________
 %___________________________________________________________________________________________________
@@ -92,11 +110,6 @@ Johannes Gutenberg-Universität Mainz
 \input{grundlagenallg}
 
 
-% \AtBeginSubsection[]{%
-% \begin{frame}
-% \tableofcontents[currentsubsection]
-% \end{frame}
-% }% AtBeginSection
 %___________________________________________________________________________________________________
 %___________________________________________________________________________________________________
 %___________________________________________________________________________________________________
@@ -121,14 +134,15 @@ Johannes Gutenberg-Universität Mainz
 %___________________________________________________________________________________________________
 %___________________________________________________________________________________________________
 %___________________________________________________________________________________________________
-% \AtBeginSection[]{%
-% 	\begin{frame}
-% 		\tableofcontents[currentsection]
-% 	\end{frame}
-% }% AtBeginSection
 % 
 % \section{Szintillationsdetektoren}
 % \input{szinti}
+
+%___________________________________________________________________________________________________
+%___________________________________________________________________________________________________
+
+\section{Spurrekonstruktion}
+\input{rekonstruktion}
 
 %___________________________________________________________________________________________________
 %___________________________________________________________________________________________________
