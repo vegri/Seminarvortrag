@@ -11,8 +11,8 @@
 			\end{figure}
 	    \column{.5\textwidth}
 	    	\begin{itemize}
-			  \item Meist n-dotiertes Grundmaterial mit p-dotierten Streifen
-			  \item Streifenbreite 10-100 $\mu$m
+			  \item Meist n-dotiertes Grundmaterial (Silikon) mit p-dotierten Streifen
+			  \item Streifenbreite 10-100 $\mu$m, Dicke ca. 250~$\mu$m
 			  \item einseitiger Streifendetektor $\rightarrow$ eindim. Ortsinformation
 			  \item doppelseitig: Elektroden in nicht-parallele Streifen segmentieren (meist 90$^\circ$)
 			  $\rightarrow$ zweidim. Ortsinformation
@@ -33,6 +33,7 @@
 			  \item Elektroden in rechteckige Pixel segmentiert $\rightarrow$ zweidim. Ortsinformation
 			  \item kleinere Elektrodenoberfläche besser um Signal zu verarbeiten (kleinerer Leckstrom)
 			  \item hohe Kanalzahl
+			  %Pixelbreite ca 100µm
 			\end{itemize}
     \end{columns}
 \end{frame}
@@ -43,9 +44,9 @@
 			  \centering
 			  \includesvg[svgpath=bilder/, width=\textwidth]{pixelstreifenvgl}
 			  \caption{Mehrfachtreffer in doppelseitigem Streifendetektor erzeugen Mehrdeutigkeiten bei Zuordnung
-			der Trefferkoordinaten [gsp]}
-			\end{figure}	
-% 			 \vspace{1cm}			
+			der Trefferkoordinaten}
+			\end{figure}
+			 \vspace{1cm}
 \end{frame}
 
 
@@ -57,7 +58,7 @@
 			  \item gute Ortsauflösung $O(10\mu m)$  ($<$~MWPC/Driftkammer, aber Pixel~$<$~Streifen)
 			  \item kleinere Energie, um $e^-$/Loch-Paar zu erzeugen $\rightarrow$ kleinere Variation der
 			  Pulshöhe, höhere Energieauflösung
-			  \item Pixeldetektoren erlauben eindeutige Zuordnung
+			  \item Pixeldetektoren erlauben einfache eindeutige Zuordnung
 			\end{itemize}	
 	    \column{.5\textwidth}
 	    	\textbf{Nachteile}
@@ -66,15 +67,29 @@
 			  \item hohe Verlustleistung (Kühlung notwendig)
 			  \item begrenzte Haltbarkeit bei hoher Strahlung (nicht ionisierende Strahlung $\rightarrow$
 			  z.B. Leerstellen im Gitter)
+			  \item hohe Kanalzahl
+			  \item Ausleseelektronik nah an aktiver Fläche
 			\end{itemize}
     \end{columns}
    \end{frame}
    
-   \begin{frame}{Pixeldetektoren}
-			\begin{figure}[htbp]
-			  \centering
-			  \includegraphics[width=\textwidth*0.5]{bla.jpg}
-			  \caption{beispielbild}
-			\end{figure}
+\begin{frame}{Pixeldetektoren}
+    \begin{columns}[T]
+			\column{.5\textwidth}
+				\begin{figure}[htbp]
+				  \centering
+				  \includegraphics[width=\columnwidth]{bilder/beispiele/pixel_layer.jpg}
+				\end{figure}
 % 			 \vspace{1cm}
+
+		 	 \column{.45\textwidth}		
+		 	 \centering	 
+				\begin{figure}[htbp]
+				  \centering
+				  \includegraphics[width=0.9\columnwidth]{bilder/beispiele/module.jpg}
+				\end{figure}
+    \end{columns}
+    \vspace{.6cm}
+			ATLAS Pixel Detecor, LHC, CERN [pba]:\\
+			Drei Lagen mit Radien 5, 9 und 12 cm;\\ 80 Millionen Pixel decken insgesamt 1,7~m$^2$ ab
 \end{frame}
