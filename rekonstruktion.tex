@@ -6,14 +6,13 @@
 			\begin{description}
 			  \item[Gegeben] Hits im Detektor
 			  \item[Gesucht] Physikalische Spuren
-			  \item[Problem] Eindeutigkeit, Rechenintensiv
+			  \item[Problem] Eindeutigkeit, rechenintensiv
 			\end{description}
 			
 	    \column{.5\textwidth}
 	    	\begin{figure}[htbp]
 			  \centering
 			   \includesvg[svgpath=bilder/, width=\textwidth]{reco-hits}
-			  \caption{Schema Streifendetektor}
 			\end{figure}
     \end{columns}
 \end{frame}
@@ -26,14 +25,21 @@
 			  \item[Gesucht] Physikalische Spuren
 			  \item[Problem] Eindeutigkeit, rechenintensiv
 			\end{description}
+			\vspace{1cm}
+				\begin{block}{Spurrekonstruktion}
+		\begin{itemize}
+		  \item Hough-Transformation
+		  \item Kalman-Filter
+		\end{itemize}
+	\end{block}
 	    \column{.5\textwidth}
 	    	\begin{figure}[htbp]
 			  \centering
 			   \includesvg[svgpath=bilder/, width=\textwidth]{reco-hits-and-tracks}
-			  \caption{Schema Streifendetektor}
 			\end{figure}
     \end{columns}
 \end{frame}
+
 
 % \begin{frame}{Spurrekonstruktion}
 % 	\begin{columns}[T]
